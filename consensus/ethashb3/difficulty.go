@@ -29,7 +29,7 @@ const (
 	// whether difficulty should go up or down.
 	frontierDurationLimit = 2
 	// minimumDifficulty The minimum that the difficulty may ever be.
-	minimumDifficulty = 20000
+	minimumDifficulty = 4000000
 	// expDiffPeriod is the exponential difficulty period
 	expDiffPeriodUint = 100000
 	// difficultyBoundDivisorBitShift is the bound divisor of the difficulty (2048),

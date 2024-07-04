@@ -75,13 +75,6 @@ var (
 		EIP2929FBlock: big.NewInt(100), // Gas cost increases for state access opcodes
 		EIP2930FBlock: big.NewInt(100), // Optional access lists
 
-		// Veldin fork was used to enable rewards to miners for including uncle blocks on Vecno network.
-		// Previously overlooked and unrewarded.
-		HIPVeldinFBlock: big.NewInt(101),
-
-		//Gaspar fork was used to upgrade the EVM to include new opcodes and features.
-		HIPGasparFBlock: big.NewInt(101),
-
 		// London + shanghai chain upgrades, aka Planned Eudora
 		// TODO: move block numbers closer once testing has concluded
 		//HIPEudoraFBlock: big.NewInt(13_524_557), // Vecno planned TX rewards change

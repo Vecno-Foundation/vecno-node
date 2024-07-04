@@ -1124,22 +1124,6 @@ func (g *Genesis) SetCliqueEpoch(n uint64) error {
 	return g.Config.SetCliqueEpoch(n)
 }
 
-func (g *Genesis) GetHIPVeldinTransition() *uint64 {
-	return g.Config.GetHIPVeldinTransition()
-}
-
-func (g *Genesis) SetHIPVeldinTransition(n *uint64) error {
-	return g.Config.SetHIPVeldinTransition(n)
-}
-
-func (g *Genesis) GetHIPGasparTransition() *uint64 {
-	return g.Config.GetHIPGasparTransition()
-}
-
-func (g *Genesis) SetHIPGasparTransition(n *uint64) error {
-	return g.Config.SetHIPGasparTransition(n)
-}
-
 func (g *Genesis) String() string {
 	j, _ := json.MarshalIndent(g, "", "    ")
 	return "Genesis: " + string(j)

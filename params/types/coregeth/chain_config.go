@@ -275,13 +275,6 @@ type CoreGethChainConfig struct {
 	BlockRewardSchedule         ctypes.Uint64BigMapEncodesHex `json:"blockReward,omitempty"`          // JSON tag matches Parity's
 
 	RequireBlockHashes map[uint64]common.Hash `json:"requireBlockHashes"`
-
-	// Veldin fork was used to enable rewards to miners for including uncle blocks on Vecno network.
-	// Previously overlooked and unrewarded.
-	HIPVeldinFBlock *big.Int `json:"hipveldinfblock,omitempty"`
-
-	// Gaspar fork was used to upgrade the EVM to include new opcodes and features.
-	HIPGasparFBlock *big.Int `json:"hipgasparfblock,omitempty"`
 }
 
 // String implements the fmt.Stringer interface.

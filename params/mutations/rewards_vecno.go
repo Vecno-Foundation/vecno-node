@@ -65,10 +65,6 @@ func GetRewardsVecno(config ctypes.ChainConfigurator, header *types.Header, uncl
 	uncleRewards := make([]*big.Int, len(uncles))
 	for i := range uncles {
 		uncleRewards[i] = uncleReward
-
-		if config.IsEnabled(config.GetHIPVeldinTransition, header.Number) {
-			minerReward.Add(minerReward, uncleReward)
-		}
 	}
 
 	return minerReward, devReward, uncleRewards

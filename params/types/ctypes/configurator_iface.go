@@ -236,14 +236,6 @@ type ProtocolSpecifier interface {
 	GetEIP6780TransitionTime() *uint64
 	SetEIP6780TransitionTime(n *uint64) error
 
-	// Vecno Network Specific Veldin Fork for uncle rewards fix
-	GetHIPVeldinTransition() *uint64
-	SetHIPVeldinTransition(n *uint64) error
-
-	// Vecno Network Specific Gaspar Fork for EVM upgrade
-	GetHIPGasparTransition() *uint64
-	SetHIPGasparTransition(n *uint64) error
-
 	// EIP4788 - Beacon block root in the EVM
 	GetEIP4788TransitionTime() *uint64
 	SetEIP4788TransitionTime(n *uint64) error

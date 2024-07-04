@@ -1384,27 +1384,3 @@ func (c *CoreGethChainConfig) SetCliqueEpoch(n uint64) error {
 	c.Clique.Epoch = n
 	return nil
 }
-
-func (c *CoreGethChainConfig) GetHIPVeldinTransition() *uint64 {
-	if c.GetChainID().Uint64() != 65357 {
-		return nil
-	}
-	return bigNewU64(c.HIPVeldinFBlock)
-}
-
-func (c *CoreGethChainConfig) SetHIPVeldinTransition(n *uint64) error {
-	c.HIPVeldinFBlock = setBig(c.HIPVeldinFBlock, n)
-	return nil
-}
-
-func (c *CoreGethChainConfig) GetHIPGasparTransition() *uint64 {
-	if c.GetChainID().Uint64() != 65357 {
-		return nil
-	}
-	return bigNewU64(c.HIPGasparFBlock)
-}
-
-func (c *CoreGethChainConfig) SetHIPGasparTransition(n *uint64) error {
-	c.HIPGasparFBlock = setBig(c.HIPGasparFBlock, n)
-	return nil
-}

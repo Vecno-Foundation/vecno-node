@@ -40,12 +40,7 @@ var (
 	// Introduced by Vecno (65357)
 	incompatibleNetworkNameMap = map[uint64][]string{
 		65357: {
-			"HIPVeldin", // Custom fork not used in forkId
-			"HIPGaspar", // Custom fork not used in forkId
-			"EIP3855",   // Enabled on Vecno via Gaspar fork
-			"EIP3860",   // Enabled on Vecno via Gaspar fork
-			"EIP3198",   // Enabled on Vecno via Gaspar fork
-			"EIP3529",   // Enabled on Vecno via Gaspar fork
+			"",
 		},
 	}
 )
