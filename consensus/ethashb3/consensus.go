@@ -42,9 +42,9 @@ import (
 
 // EthashB3 proof-of-work protocol constants.
 var (
-	maxUncles              = 0                // Maximum number of uncles allowed in a single block
-	allowedFutureBlockTime = 20 * time.Second // Max time from current time allowed for blocks, before they're considered future blocks
-	MinimumDifficulty      = big.NewInt(4000000)
+	maxUncles              = 0               // Maximum number of uncles allowed in a single block
+	allowedFutureBlockTime = 5 * time.Second // Max time from current time allowed for blocks, before they're considered future blocks
+	MinimumDifficulty      = big.NewInt(2000000)
 )
 
 // Various error messages to mark blocks invalid. These should be private to
