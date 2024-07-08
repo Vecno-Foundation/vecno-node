@@ -5,7 +5,7 @@ package params
 var VecnoBootnodes = []string{
 	// Foundation Bootnodes
 	"", // Dev
-	"enode://59d3ce5df45507ba3e7998392e17f1e085b9ccef5db004beeb3f9641e8846e2c0dd9842f6b8ea44628b4278c14acb10d076fe5fc8f648e5eedefb944bc910e38@172.29.144.1:30303", // Explorer
+	"enode://3e12c4c633157ae52e7e05c168f4b1aa91685a36ba33a0901aa8a83cfeb84c3633226e3dd2eaf59bfc83492139e1d68918bf5b60ba93e2deaedb4e6a2ded5d32@66.29.155.55:30303", // Explorer
 
 	// Communtiy Bootnodes
 	"",
