@@ -74,28 +74,9 @@ var (
 		EIP2718FBlock: big.NewInt(100), // Typed Transaction Envelope
 		EIP2929FBlock: big.NewInt(100), // Gas cost increases for state access opcodes
 		EIP2930FBlock: big.NewInt(100), // Optional access lists
-
-		// London + shanghai chain upgrades, aka Planned Eudora
-		// TODO: move block numbers closer once testing has concluded
-		//HIPEudoraFBlock: big.NewInt(13_524_557), // Vecno planned TX rewards change
-		//EIP1559FBlock: big.NewInt(13_524_557), // EIP-1559 transactions`
-		//EIP3541FBlock: big.NewInt(13_524_557), // EIP-3541 Reject code starting with 0xEF
-		//EIP3855FBlock: big.NewInt(13_524_557), // PUSH0 instruction
-		//EIP3860FBlock: big.NewInt(13_524_557), // Limit and meter initcode
-		//EIP3198FBlock: big.NewInt(13_524_557), // BASEFEE Opcode
-		//EIP3529FBlock: big.NewInt(13_524_557), // Reduction in refunds
-
-		// Unplanned Upgrade, aka Olantis
-		// EIP3651FBlock: big.NewInt(13_524_557), // Warm COINBASE (gas reprice)
-		// EIP6049FBlock: big.NewInt(13_524_557), // Deprecate SELFDESTRUCT
-		// EIP3541FBlock: big.NewInt(13_524_557), // Reject new contract code starting with the 0xEF byte
-
-		// Spiral, aka Shanghai (partially)
-		// EIP4399FBlock: nil, // Supplant DIFFICULTY with PREVRANDAO. Vecno  does not spec 4399 because it's still PoW, and 4399 is only applicable for the PoS system.
-		// EIP4895FBlock: nil, // Beacon chain push withdrawals as operations
-
 		// Dummy EIPs, unused by ethashb3 but used by forkid
-		EIP3554FBlock: big.NewInt(13_524_557),
+
+		EIP3554FBlock: big.NewInt(130_240_557_000),
 		//EIP4345FBlock: big.NewInt(27_200_177),
 		//EIP5133FBlock: big.NewInt(40_725_107),
 
@@ -308,13 +289,6 @@ var (
 			270_869_400: big.NewInt(0.012429611 * vars.Ether),
 			272_184_300: big.NewInt(0.011398004 * vars.Ether),
 			273_499_200: big.NewInt(0.01 * vars.Ether),
-		},
-
-		TrustedCheckpoint: &ctypes.TrustedCheckpoint{
-			BloomRoot:    common.HexToHash(""),
-			CHTRoot:      common.HexToHash(""),
-			SectionHead:  common.HexToHash(""),
-			SectionIndex: 0,
 		},
 
 		RequireBlockHashes: map[uint64]common.Hash{
