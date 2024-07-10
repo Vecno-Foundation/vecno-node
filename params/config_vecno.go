@@ -50,7 +50,6 @@ var (
 		EIP212FBlock: big.NewInt(70),
 		EIP213FBlock: big.NewInt(70),
 		EIP214FBlock: big.NewInt(70),
-		//EIP649FBlock: big.NewInt(1001),
 		EIP658FBlock: big.NewInt(70),
 
 		// Constantinople eq
@@ -74,13 +73,10 @@ var (
 		EIP2718FBlock: big.NewInt(100), // Typed Transaction Envelope
 		EIP2929FBlock: big.NewInt(100), // Gas cost increases for state access opcodes
 		EIP2930FBlock: big.NewInt(100), // Optional access lists
+
 		// Dummy EIPs, unused by ethashb3 but used by forkid
-
 		EIP3554FBlock: big.NewInt(130_240_557_000),
-		//EIP4345FBlock: big.NewInt(27_200_177),
-		//EIP5133FBlock: big.NewInt(40_725_107),
 
-		// Define the planned 3 year decreasing rewards.
 		BlockRewardSchedule: map[uint64]*big.Int{
 			0:           big.NewInt(9 * vars.Ether),
 			3_944_700:   big.NewInt(4.371893735 * vars.Ether),

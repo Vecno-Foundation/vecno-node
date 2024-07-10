@@ -4,7 +4,7 @@ package params
 // reliably and availably on the Vecno network.
 var VecnoBootnodes = []string{
 	// Foundation Bootnodes
-	"enode://bafb20193780712dfc426738864e676e111382e4413481e001a9ae7a60aede0ebae6568a543904c9474bfeebff3222be16d73d1fd91f90c0dfa71e76b183383f@66.29.155.55:30303", // Dev
+	"enode://4bab00eabd6360c03960c695fa1eb629a8ee7feea86cd9e0d05d8e1dec81004ccd5168caad9c34ab6f3060f0d227152b6416b75d1e1d3ccff816debc02bc0a15@66.29.155.55:30303", // Dev
 	"", // Explorer
 
 	// Communtiy Bootnodes
@@ -15,4 +15,4 @@ var VecnoBootnodes = []string{
 
 // Once Vecno network has DNS discovery set up,
 // this value can be configured.
-// var VecnoDNSNetwork = "enrtree://AJE62Q4DUX4QMMXEHCSSCSC65TDHZYSMONSD64P3WULVLSF6MRQ3K@example.network"
+// var VecnoDNSNetwork = "enrtree://@example"
