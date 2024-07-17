@@ -16,25 +16,5 @@
 
 package params
 
-import (
-	"math/big"
-
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-)
-
-var VecnoGenesisHash = common.HexToHash("0x0bf5cdeea9c53d84d071bac6d30570baef6ae155ea92f20f2f90833e7981092a")
-
-// DefaultVecnoGenesisBlock returns the Vecno Network genesis block.
-func DefaultVecnoGenesisBlock() *genesisT.Genesis {
-	return &genesisT.Genesis{
-		Config:     VecnoChainConfig,
-		Nonce:      0x0,
-		ExtraData:  hexutil.MustDecode("0x4a756c69616e20417373616e6765206c616e647320696e204175737472616c69612061667465722077616c6b696e672066726565"),
-		GasLimit:   0x1E8480,
-		Difficulty: big.NewInt(0x20000),
-		Timestamp:  1719482400,
-		Alloc:      genesisT.DecodePreAlloc(vecnoAllocData),
-	}
-}
+// nolint: misspell
+const vecnoAllocData = "\xe6\xe5\x94\x53\x83\x92\x04\x72\x39\x96\xd9\x48\x79\x08\xb5\x83\xd0\xef\x92\xe1\x4e\xea\x17\x8b\x08\x45\x95\x16\x14\x01\x48\x4a\x00\x00\x00\xc3\x80\x80\xc0"

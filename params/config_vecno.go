@@ -43,36 +43,36 @@ var (
 		EIP170FBlock: big.NewInt(0),
 
 		// Byzantium eq -- Enables Smart contracts
-		EIP100FBlock: big.NewInt(70),
-		EIP140FBlock: big.NewInt(70),
-		EIP198FBlock: big.NewInt(70),
-		EIP211FBlock: big.NewInt(70),
-		EIP212FBlock: big.NewInt(70),
-		EIP213FBlock: big.NewInt(70),
-		EIP214FBlock: big.NewInt(70),
-		EIP658FBlock: big.NewInt(70),
+		EIP100FBlock: big.NewInt(1000),
+		EIP140FBlock: big.NewInt(1000),
+		EIP198FBlock: big.NewInt(1000),
+		EIP211FBlock: big.NewInt(1000),
+		EIP212FBlock: big.NewInt(1000),
+		EIP213FBlock: big.NewInt(1000),
+		EIP214FBlock: big.NewInt(1000),
+		EIP658FBlock: big.NewInt(1000),
 
 		// Constantinople eq
-		EIP145FBlock:    big.NewInt(80),
-		EIP1014FBlock:   big.NewInt(80),
-		EIP1052FBlock:   big.NewInt(80),
-		EIP1283FBlock:   big.NewInt(80),
-		PetersburgBlock: big.NewInt(80),
+		EIP145FBlock:    big.NewInt(1100),
+		EIP1014FBlock:   big.NewInt(1100),
+		EIP1052FBlock:   big.NewInt(1100),
+		EIP1283FBlock:   big.NewInt(1100),
+		PetersburgBlock: big.NewInt(1100),
 
 		// Istanbul eq
-		EIP152FBlock:  big.NewInt(90),
-		EIP1108FBlock: big.NewInt(90),
-		EIP1344FBlock: big.NewInt(90),
-		EIP1884FBlock: big.NewInt(90),
-		EIP2028FBlock: big.NewInt(90),
-		EIP2200FBlock: big.NewInt(90),
-		EIP2384FBlock: big.NewInt(90),
+		EIP152FBlock:  big.NewInt(1200),
+		EIP1108FBlock: big.NewInt(1200),
+		EIP1344FBlock: big.NewInt(1200),
+		EIP1884FBlock: big.NewInt(1200),
+		EIP2028FBlock: big.NewInt(1200),
+		EIP2200FBlock: big.NewInt(1200),
+		EIP2384FBlock: big.NewInt(1200),
 
 		// Berlin
-		EIP2565FBlock: big.NewInt(100), // ModExp Gas Cost
-		EIP2718FBlock: big.NewInt(100), // Typed Transaction Envelope
-		EIP2929FBlock: big.NewInt(100), // Gas cost increases for state access opcodes
-		EIP2930FBlock: big.NewInt(100), // Optional access lists
+		EIP2565FBlock: big.NewInt(1300), // ModExp Gas Cost
+		EIP2718FBlock: big.NewInt(1300), // Typed Transaction Envelope
+		EIP2929FBlock: big.NewInt(1300), // Gas cost increases for state access opcodes
+		EIP2930FBlock: big.NewInt(1300), // Optional access lists
 
 		// Dummy EIPs, unused by ethashb3 but used by forkid
 		EIP3554FBlock: big.NewInt(130_240_557_000),
@@ -288,7 +288,7 @@ var (
 		},
 
 		RequireBlockHashes: map[uint64]common.Hash{
-			0: common.HexToHash("0x529e9a367fd6ad8fa08dfbd8c1b26b766c46e287584cf714d6c786c5a52e6a4d"),
+			0: common.HexToHash("0x0bf5cdeea9c53d84d071bac6d30570baef6ae155ea92f20f2f90833e7981092a"),
 		},
 
 		// No go
