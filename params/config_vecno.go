@@ -34,8 +34,9 @@ var (
 		ChainID:                   big.NewInt(VecnoChainId),
 		SupportedProtocolVersions: vars.DefaultProtocolVersions,
 
-		EIP2FBlock:   big.NewInt(0),
-		EIP7FBlock:   big.NewInt(0),
+		EIP2FBlock: big.NewInt(0),
+		EIP7FBlock: big.NewInt(0),
+
 		EIP150Block:  big.NewInt(0),
 		EIP155Block:  big.NewInt(0),
 		EIP160FBlock: big.NewInt(0),
@@ -43,36 +44,36 @@ var (
 		EIP170FBlock: big.NewInt(0),
 
 		// Byzantium eq -- Enables Smart contracts
-		EIP100FBlock: big.NewInt(1000),
-		EIP140FBlock: big.NewInt(1000),
-		EIP198FBlock: big.NewInt(1000),
-		EIP211FBlock: big.NewInt(1000),
-		EIP212FBlock: big.NewInt(1000),
-		EIP213FBlock: big.NewInt(1000),
-		EIP214FBlock: big.NewInt(1000),
-		EIP658FBlock: big.NewInt(1000),
+		EIP100FBlock: big.NewInt(0),
+		EIP140FBlock: big.NewInt(0),
+		EIP198FBlock: big.NewInt(0),
+		EIP211FBlock: big.NewInt(0),
+		EIP212FBlock: big.NewInt(0),
+		EIP213FBlock: big.NewInt(0),
+		EIP214FBlock: big.NewInt(0),
+		EIP658FBlock: big.NewInt(0),
 
 		// Constantinople eq
-		EIP145FBlock:    big.NewInt(1100),
-		EIP1014FBlock:   big.NewInt(1100),
-		EIP1052FBlock:   big.NewInt(1100),
-		EIP1283FBlock:   big.NewInt(1100),
-		PetersburgBlock: big.NewInt(1100),
+		EIP145FBlock:    big.NewInt(0),
+		EIP1014FBlock:   big.NewInt(0),
+		EIP1052FBlock:   big.NewInt(0),
+		EIP1283FBlock:   big.NewInt(0),
+		PetersburgBlock: big.NewInt(0),
 
 		// Istanbul eq
-		EIP152FBlock:  big.NewInt(1200),
-		EIP1108FBlock: big.NewInt(1200),
-		EIP1344FBlock: big.NewInt(1200),
-		EIP1884FBlock: big.NewInt(1200),
-		EIP2028FBlock: big.NewInt(1200),
-		EIP2200FBlock: big.NewInt(1200),
-		EIP2384FBlock: big.NewInt(1200),
+		EIP152FBlock:  big.NewInt(0),
+		EIP1108FBlock: big.NewInt(0),
+		EIP1344FBlock: big.NewInt(0),
+		EIP1884FBlock: big.NewInt(0),
+		EIP2028FBlock: big.NewInt(0),
+		EIP2200FBlock: big.NewInt(0),
+		EIP2384FBlock: big.NewInt(0),
 
 		// Berlin
-		EIP2565FBlock: big.NewInt(1300), // ModExp Gas Cost
-		EIP2718FBlock: big.NewInt(1300), // Typed Transaction Envelope
-		EIP2929FBlock: big.NewInt(1300), // Gas cost increases for state access opcodes
-		EIP2930FBlock: big.NewInt(1300), // Optional access lists
+		EIP2565FBlock: big.NewInt(0), // ModExp Gas Cost
+		EIP2718FBlock: big.NewInt(0), // Typed Transaction Envelope
+		EIP2929FBlock: big.NewInt(0), // Gas cost increases for state access opcodes
+		EIP2930FBlock: big.NewInt(0), // Optional access lists
 
 		// Dummy EIPs, unused by ethashb3 but used by forkid
 		EIP3554FBlock: big.NewInt(130_240_557_000),
@@ -292,6 +293,7 @@ var (
 		},
 
 		// No go
+		DAOForkBlock:            nil,
 		EIP4399FBlock:           nil,
 		EIP4895FBlock:           nil,
 		TerminalTotalDifficulty: nil,

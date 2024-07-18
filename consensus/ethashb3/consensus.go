@@ -42,8 +42,8 @@ import (
 
 // EthashB3 proof-of-work protocol constants.
 var (
-	maxUncles              = 0               // Maximum number of uncles allowed in a single block
-	allowedFutureBlockTime = 5 * time.Second // Max time from current time allowed for blocks, before they're considered future blocks
+	maxUncles              = 3                // Maximum number of uncles allowed in a single block
+	allowedFutureBlockTime = 10 * time.Second // Max time from current time allowed for blocks, before they're considered future blocks
 	MinimumDifficulty      = big.NewInt(2000000)
 )
 
