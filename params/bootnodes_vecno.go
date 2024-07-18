@@ -4,8 +4,8 @@ package params
 // reliably and availably on the Vecno network.
 var VecnoBootnodes = []string{
 	// Foundation Bootnodes
-	"enode://c788d2afcf3c1d2a8bd23e92eb0e6306712ebb6a34c8026e217c9ba05eb9d580b8dcf39859bd4ddee80434f2793b2574f0baddcc4976d979f5d6e30247476591@203.161.54.144:30303", // Dev
-	"enode://3ebd502effd02de6e1c4e034e145051cba90c586bc3e11db64b1d985b27bd8a294bf477d92cb067ad2d389c5233c749f348610d99b70d15d26c510e79eb7d212@66.29.155.55:30303",   // Explorer
+	"enode://7cc15bfbd2050042229655007935427312deaf186e460dea25c627b5880c79f35b362a96fd70df5bcd9001cc50354c251f86020e2092931d7af331adfb8fb3b5@203.161.54.144:30303", // Dev
+	"enode://0cc5d3fb8623e88fbaa1f63b1e5a7512b4bb135a45dc7423f50e76b73a50b8411c0cbaf61bd618d40a913ef0df327470b631943f8f3dbe5a901d1be4ab679e07@66.29.155.55:30303",   // Explorer
 
 	// Communtiy Bootnodes
 	"",
