@@ -1,4 +1,4 @@
-Vecno-Core testnet.
+This is a Vecno Testnet using EVM / Core-geth as it's core.
 
 How to build:
 
@@ -14,4 +14,5 @@ git clone https://github.com/Vecno-Foundation/vecno-node.git <br>
 cd vecno-node <br>
 make all <br>
 cd build/bin <br>
-./geth --vecno --mine --miner.etherbase "YourWeb3WalletAddress" <br>
+./geth console --vecno --mine --miner.etherbase "YourWeb3WalletAddress" --miner.threads="NumbersOfCPUThreadsForMining" <br>
+
