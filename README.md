@@ -11,3 +11,5 @@ echo export PATH=$HOME/go/bin:/usr/local/go/bin:$PATH >> ~/.profile <br>
 source ~/.profile <br>
 apt install git <br>
 git clone https://github.com/Vecno-Foundation/vecno-node.git <br>
+cd vecno-node <br>
+make all
