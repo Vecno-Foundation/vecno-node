@@ -12,6 +12,6 @@ source ~/.profile <br>
 apt install git <br>
 git clone https://github.com/Vecno-Foundation/vecno-node.git <br>
 cd vecno-node <br>
-make all
-cd build/bin
-./geth --vecno --mine --miner.etherbase "YourWeb3WalletAddress"
+make all <br>
+cd build/bin <br>
+./geth --vecno --mine --miner.etherbase "YourWeb3WalletAddress" <br>
