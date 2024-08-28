@@ -24,8 +24,8 @@ import (
 
 var (
 	UncleBlockReward    = big.NewInt(0)
-	DevRewardPercentage = 10                                           // Set the developer reward percentage (10%)
-	DevWalletAddress    = "0x44A9161474953cEe9CEd3C2a518B52B22CdAbeC5" // Replace with the actual developer wallet address
+	DevRewardPercentage = 10 // Set the developer reward percentage (10%)
+	DevWalletAddress    = "0x53839204723996D9487908b583D0eF92e14eEa17"
 )
 
 // Function to calculate the developer reward based on the block reward
