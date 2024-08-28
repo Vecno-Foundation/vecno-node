@@ -1,4 +1,4 @@
-This is a Vecno Testnet using EVM / Core-geth as it's core.
+This is a Vecno Testnet v2 using EVM / Core-geth as it's core.
 
 How to build:
 
