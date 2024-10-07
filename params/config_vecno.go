@@ -289,7 +289,7 @@ var (
 		},
 
 		RequireBlockHashes: map[uint64]common.Hash{
-			0: common.HexToHash("0x0bf5cdeea9c53d84d071bac6d30570baef6ae155ea92f20f2f90833e7981092a"),
+			0: common.HexToHash("0xe4886a8ee17318bf3d2145998b0ff4e4fb2628770f89fb11990f12d3a9f254a6"),
 		},
 
 		// No go

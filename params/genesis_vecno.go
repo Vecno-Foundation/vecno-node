@@ -24,7 +24,7 @@ import (
 	"github.com/ethereum/go-ethereum/params/types/genesisT"
 )
 
-var VecnoGenesisHash = common.HexToHash("0x0bf5cdeea9c53d84d071bac6d30570baef6ae155ea92f20f2f90833e7981092a")
+var VecnoGenesisHash = common.HexToHash("0xe4886a8ee17318bf3d2145998b0ff4e4fb2628770f89fb11990f12d3a9f254a6")
 
 // DefaultVecnoGenesisBlock returns the Vecno Network genesis block.
 func DefaultVecnoGenesisBlock() *genesisT.Genesis {
@@ -33,7 +33,7 @@ func DefaultVecnoGenesisBlock() *genesisT.Genesis {
 		Nonce:      0x0,
 		ExtraData:  hexutil.MustDecode("0x4a756c69616e20417373616e6765206c616e647320696e204175737472616c69612061667465722077616c6b696e672066726565"),
 		GasLimit:   0x1E8480,
-		Difficulty: big.NewInt(0x20000),
+		Difficulty: big.NewInt(0x10000),
 		Timestamp:  1719482400,
 		Alloc:      genesisT.DecodePreAlloc(vecnoAllocData),
 	}
